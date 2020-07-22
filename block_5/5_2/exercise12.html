@@ -83,7 +83,7 @@
 
       let imagem = document.createElement("img");
       imagem.src = "https://picsum.photos/200";
-      imagem.classList.add("small-image")
+      imagem.classList.add("small-image");
       document.getElementsByClassName("left-content")[0].appendChild(imagem);
 
       let lista = document.createElement("ul");
@@ -97,8 +97,11 @@
       }
       for (let j = 0; j < 3; j++){
         let titulo3 = document.createElement("h3");
+        titulo3.className = "description";
         document.getElementsByClassName("main-content")[0].appendChild(titulo3);
       }
+      titulo.classList.add("title");
+      document.querySelector(".main-content").removeChild(caixa3);
 
     </script>
   </body>
