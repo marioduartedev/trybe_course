@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Formulário Currículo</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -12,7 +13,7 @@
 	<div class="container">
 		<div class="formulario">
 			<form id="formulario" action="" method="GET">
-				<fieldset>
+				<fieldset id="field">
 					<div class="line">
 						<label for="nome">Nome:</label>
 						<input class="inputs" name="nome" id="nome" type="text" maxlength="40" required>
@@ -40,10 +41,13 @@
 						</select>
 					</div>
 					<div class="line">
-						<input class="moradia" name="moradia" id="casa" type="radio" value="casa" required>
-						<label for="casa">Casa</label>
-						<input class="moradia" name="moradia" id="apartamento" type="radio" value="apartamento" required>
-						<label for="apartamento">Apartamento</label>
+						Tipo de moradia:
+						<div>
+							<input class="moradia" name="moradia" id="casa" type="radio" value="casa" required>
+							<label for="casa">Casa</label>
+							<input class="moradia" name="moradia" id="apartamento" type="radio" value="apartamento" required>
+							<label for="apartamento">Apartamento</label>
+						</div>
 					</div>
 				</fieldset>
 				<fieldset>
@@ -64,8 +68,10 @@
 						<input class="inputs" name="data" id="data" type="date" required>
 					</div>
 				</fieldset>
-				<button id="botao" type="submit">Enviar</button>
-				<button id="resetar" type="reset">Limpar</button>
+				<div class="bottons">
+					<button id="botao" type="submit">Enviar</button>
+					<button id="resetar" type="reset">Limpar</button>
+				</div>
 			</form>
 		</div>
 		<div class="curriculo">
