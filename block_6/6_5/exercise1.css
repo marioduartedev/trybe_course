@@ -1,0 +1,39 @@
+body {
+    font-size: 2.5em;
+    margin: 5px;
+    text-align: center;
+}
+h1 {
+    font-size: 1em;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 10px;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: rgb(175, 174, 174);
+        font-size: 1.5em;
+        margin: 25px;
+        text-align: justify;
+    }  
+    .figures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+}
+    @media screen and (min-width: 1100px) {
+    figures {
+        max-width: 900px;
+        margin: auto;
+    }
+}
